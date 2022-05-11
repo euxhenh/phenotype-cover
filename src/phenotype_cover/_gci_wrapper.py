@@ -95,7 +95,11 @@ class GCIWrapper(BaseEstimator):
                 self._true_indices.append(i)
                 self._gci.add_multiset(
                     elements.tolist(), multiplicity.tolist())
-
+        if len(self._true_indices) == 0:
+            raise ValueError(
+                "No sets were selected. This means your data matrix "
+                "consists of only zeros. Please use higher multiplicity."
+            )
         self._true_indices = np.array(self._true_indices)
         self.n_multisets_ = len(self._true_indices)
         if self.verbose:

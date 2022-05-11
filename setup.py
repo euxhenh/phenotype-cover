@@ -23,7 +23,7 @@ options = {
     'description': 'phenotype_cover is a package for biomarker discovery using multiset multicover.',
     'long_description': 'Implements the greedy and cross-entropy-method phenotype cover algorithms.',
     'license': 'MIT',
-    'version': '0.2',
+    'version': '0.3',
     'author': 'Euxhen Hasanaj',
     'author_email': 'ehasanaj@cs.cmu.edu',
     'url': 'https://github.com/euxhenh/phenotype-cover',
