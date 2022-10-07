@@ -32,7 +32,7 @@ class FeatureSelector(BaseEstimator):
         Returns
         -------
         self : object
-            Returns the instance itself.
+            Returns the selected indices.
         """
 
     def fit_select(self, X, y=None, **params):
@@ -49,7 +49,7 @@ class FeatureSelector(BaseEstimator):
 
         Returns
         -------
-        self.select
+        Returns the selected indices.
         """
         fit_params = {
             key: params[key]

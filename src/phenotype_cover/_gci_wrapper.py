@@ -15,10 +15,9 @@ class GCIWrapper(BaseEstimator):
         Args:
             n_elements: int, number of elements in the greey cover
             multiplier: numeric or None. If not None, will multiply each
-                element of M with this value, effectively increasing the
-                multiplicity of each value. This can be applied when finer
-                resolution over the multiplities is needed in case when
-                they are represented as float values. Note, the coverage
+                element of M with `multiplier`, effectively increasing the
+                multiplicity of each element. This can be applied when finer
+                resolution over the multiplities is desired. Note, the coverage
                 factor requested will also be multiplied by this same factor.
             verbose: bool, whether to show info.
 
