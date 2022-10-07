@@ -4,6 +4,8 @@ algorithm to set cover, and CEM-PC is based on the cross-entropy-method.
 
 Install via
 
+.. code:: bash
+
     pip install multiset-multicover
     pip install phenotype-cover
 
