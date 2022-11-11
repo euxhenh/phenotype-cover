@@ -1,6 +1,7 @@
 This repository provides two algorithms for the phenotype cover (PC)
-biomarker selection problem. GreedyPC is based on the extended greedy
-algorithm to set cover, and CEM-PC is based on the cross-entropy-method.
+biomarker selection problem introduced in the paper:
+"`Multiset multicover methods for discriminative marker selection<https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(22)00229-6>`_".
+GreedyPC is based on the extended greedy algorithm to set cover, and CEM-PC is based on the cross-entropy-method.
 
 Install via
 
