@@ -18,8 +18,8 @@ Example
 
     >>> from phenotype_cover import GreedyPC
 
-    >>> # Multiply data matrix by 100 to avoid a zero-matrix after the "rounding" step
-    >>> X = np.random.random((1000, 200)) * 100  # data matrix
+    >>> # X is the data matrix (log transformed) and y are class labels
+    >>> X = np.log1p(np.random.randint(0, 1000, (1000, 200)))
     >>> y = np.random.randint(0, 5, 1000)  # class labels
 
     >>> gpc = GreedyPC()
