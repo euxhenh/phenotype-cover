@@ -17,14 +17,14 @@ Import `GreedyPC` or `CEMPC` from `phenotype_cover`.
 Example
 
     >>> from phenotype_cover import GreedyPC
+    >>> from sklearn.datasets import make_classification
 
-    >>> # X is the data matrix (log transformed) and y are class labels
-    >>> X = np.log1p(np.random.randint(0, 1000, (1000, 200)))
-    >>> y = np.random.randint(0, 5, 1000)  # class labels
+    >>> # You may need to log-transform X if working with raw counts
+    >>> X, y = make_classification(1000, 200, n_informative=5, n_classes=5, scale=100)
 
     >>> gpc = GreedyPC()
     >>> gpc.fit(X, y)
-    >>> features = gpc.select(10)  # coverage of 10
+    >>> features = gpc.select(100)  # coverage of 100
 
 Some other functionality implemented in GreedyPC
 
