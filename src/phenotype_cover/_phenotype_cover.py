@@ -180,8 +180,8 @@ class GreedyPC(SetCoverSelectorBase):
         self.feature_importances_[solution] = np.arange(
             len(solution) + 1, 1, -1)
         if self.n_pairs_with_incomplete_cover_ > 0 and self.verbose:
-            logger.warn("Could not cover "
-                        f"{self.n_pairs_with_incomplete_cover_} elements.")
+            logger.warning("Could not cover "
+                           f"{self.n_pairs_with_incomplete_cover_} elements.")
 
         self.n_outputs_ = len(solution)
         logger.info(f"Selected {self.n_outputs_} multisets.")

@@ -3,7 +3,7 @@ import unittest
 import numpy as np
 from scipy.sparse import csr_matrix
 from numpy.testing import assert_allclose
-from src.phenotype_cover import pairwise_differences, group_by
+from phenotype_cover._operations import pairwise_differences, group_by
 
 
 class TestSelectors(unittest.TestCase):

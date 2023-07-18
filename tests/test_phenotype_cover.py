@@ -4,8 +4,8 @@ import numpy as np
 from numpy.testing import assert_allclose
 from sklearn.feature_selection import SelectFromModel
 
-from src.phenotype_cover import GreedyPC
-from src.phenotype_cover._gci_wrapper import GCIPython, GCIWrapper
+from phenotype_cover import GreedyPC
+from phenotype_cover._gci_wrapper import GCIPython, GCIWrapper
 
 
 def wrap(gci, x):
